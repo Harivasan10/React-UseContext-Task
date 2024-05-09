@@ -1,0 +1,227 @@
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #081b29;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+html {
+  width: 100%;
+  height: 100vh;
+}
+
+.fa {
+  margin-left: 7px;
+}
+
+.img {
+  width: 100%;
+  height: 200px;
+}
+
+/* Navigation Styles */
+
+.nav {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #112e42;
+  color: #00abf0;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.2px);
+  -webkit-backdrop-filter: blur(4.2px);
+  border: 1px solid rgba(33, 79, 192, 0.31);
+  height: 80px;
+  margin-top: 0;
+}
+
+.nav > li {
+  color: white;
+}
+
+.nav > li:hover {
+  color: rgb(224, 163, 64);
+}
+
+/* Product Styles */
+
+.productContainer {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.products {
+  width: 350px;
+  padding: 15px;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  background-color: #112e42;
+  color: #00abf0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  overflow: hidden;
+  transform-style: preserve-3d;
+}
+
+.productDesc {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.products:hover {
+  box-shadow: 0 8px 16px #00abf0;
+}
+
+.productDesc span {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.productDesc span b {
+  margin-right: 5px;
+}
+
+/* Button Styles */
+
+.button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add:hover {
+  background-color: #0056b3;
+}
+
+/* No Items Message */
+
+.NoItems {
+  font-size: 50px;
+  font-weight: 600;
+  margin-top: 100px;
+}
+
+/* Name and Text Styles */
+
+.Name {
+  font-weight: 700;
+  color: rgba(25, 38, 220, 0.886);
+}
+
+.text-center {
+  font-weight: 400;
+  font-style: oblique;
+}
+
+/* Quantity Display Styles */
+
+.quantity-display {
+  padding: 0px 20px 0px 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+/* Buttons Styles */
+
+.buttons {
+  border-radius: 20px;
+  border-color: aqua;
+  text-align: center;
+}
+
+.button1 {
+  border-radius: 50%;
+  border-color: aqua;
+}
+
+.button-container {
+  display: flex;
+  margin-bottom: 2px;
+}
+
+/* Total Price Styles */
+
+.Total-price {
+  margin-right: auto;
+  color: #00abf0;
+}
+
+/* Cart Product Styles */
+
+.cart-product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+/* Container Styles */
+
+.container {
+  color: #00abf0;
+  font-weight: 800;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: x-large;
+  display: flex;
+  justify-content: end;
+}
+
+.container1 {
+  color: #00abf0;
+  font-weight: 800;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: xx-large;
+}
+
+/* Media Queries */
+
+/* Media Query for Tablets and Larger Mobile Devices (480px - 767px) */
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  
+  body {
+    font-size: 16px;
+  }
+
+  .nav {
+    height: 60px;
+  }
+
+  .productContainer {
+    padding: 10px;
+    justify-content: center; 
+  }
+
+  .products {
+    width: 100%; 
+  }
+
+  .button {
+    padding: 8px 16px;
+  }
+
+}
